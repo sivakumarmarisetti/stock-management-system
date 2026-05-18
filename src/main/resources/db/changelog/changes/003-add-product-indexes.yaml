@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 009-add-product-indexes
+      author: shiva
+
+      changes:
+
+        - createIndex:
+            indexName: idx_product_name
+            tableName: products
+            columns:
+              - column:
+                  name: product_name
+
+        - createIndex:
+            indexName: idx_product_code
+            tableName: products
+            columns:
+              - column:
+                  name: product_code
+
+        - createIndex:
+            indexName: idx_tenant_id
+            tableName: products
+            columns:
+              - column:
+                  name: tenant_id
+
+        - createIndex:
+            indexName: idx_deleted
+            tableName: products
+            columns:
+              - column:
+                  name: deleted

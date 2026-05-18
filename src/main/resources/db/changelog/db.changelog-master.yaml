@@ -1,0 +1,10 @@
+databaseChangeLog:
+
+  - include:
+      file: db/changelog/changes/001-create-audit-logs-table.yaml
+
+  - include:
+      file: db/changelog/changes/002-add-deleted-column-to-products.yaml
+
+  - include:
+      file: db/changelog/changes/003-add-product-indexes.yaml

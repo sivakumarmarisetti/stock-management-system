@@ -1,0 +1,52 @@
+2026-05-16T23:44:30.767+05:30  INFO 32940 --- [stock-management-system] [restartedMain] c.s.StockManagementSystemApplication     : Starting StockManagementSystemApplication using Java 17.0.18 with PID 32940 (C:\Users\Siva.Marisetti\Downloads\stock-management-system\stock-management-system\target\classes started by Siva.Marisetti in C:\Users\Siva.Marisetti\Downloads\stock-management-system\stock-management-system)
+2026-05-16T23:44:30.773+05:30  INFO 32940 --- [stock-management-system] [restartedMain] c.s.StockManagementSystemApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T23:44:30.847+05:30  INFO 32940 --- [stock-management-system] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-16T23:44:30.852+05:30  INFO 32940 --- [stock-management-system] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-16T23:44:31.783+05:30  INFO 32940 --- [stock-management-system] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T23:44:31.894+05:30  INFO 32940 --- [stock-management-system] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2026-05-16T23:44:32.673+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-16T23:44:32.689+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T23:44:32.689+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-16T23:44:32.753+05:30  INFO 32940 --- [stock-management-system] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1901 ms
+2026-05-16T23:44:32.976+05:30  INFO 32940 --- [stock-management-system] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-16T23:44:33.022+05:30  INFO 32940 --- [stock-management-system] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-16T23:44:33.640+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16T23:44:33.681+05:30  INFO 32940 --- [stock-management-system] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T23:44:34.078+05:30  INFO 32940 --- [stock-management-system] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@209fc578
+2026-05-16T23:44:34.078+05:30  INFO 32940 --- [stock-management-system] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T23:44:34.222+05:30  INFO 32940 --- [stock-management-system] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/stock_management_system?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: stock_management_system/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-16T23:44:35.495+05:30  INFO 32940 --- [stock-management-system] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16T23:44:35.606+05:30  INFO 32940 --- [stock-management-system] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T23:44:35.842+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-16T23:44:36.525+05:30  WARN 32940 --- [stock-management-system] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16T23:44:36.720+05:30  WARN 32940 --- [stock-management-system] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6b76d225-15b1-4406-b9dd-761ffe784420
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-16T23:44:36.741+05:30  INFO 32940 --- [stock-management-system] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-16T23:44:37.895+05:30  INFO 32940 --- [stock-management-system] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-16T23:44:37.903+05:30  INFO 32940 --- [stock-management-system] [restartedMain] c.s.StockManagementSystemApplication     : Started StockManagementSystemApplication in 7.753 seconds (process running for 8.639)
+2026-05-16T23:46:21.202+05:30  INFO 32940 --- [stock-management-system] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T23:46:21.204+05:30  INFO 32940 --- [stock-management-system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-16T23:46:21.206+05:30  INFO 32940 --- [stock-management-system] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-16T23:46:23.581+05:30  WARN 32940 --- [stock-management-system] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1048, SQLState: 23000
+2026-05-16T23:46:23.581+05:30  WARN 32940 --- [stock-management-system] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : Column 'active' cannot be null
+2026-05-16T23:46:23.758+05:30  WARN 32940 --- [stock-management-system] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'active' cannot be null] [insert into users (active,email,full_name,password,role,username) values (?,?,?,?,?,?)]; SQL [insert into users (active,email,full_name,password,role,username) values (?,?,?,?,?,?)]; constraint [active]]
+2026-05-16T23:48:24.988+05:30  INFO 32940 --- [stock-management-system] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-16T23:48:25.141+05:30  INFO 32940 --- [stock-management-system] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-16T23:48:25.158+05:30  INFO 32940 --- [stock-management-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T23:48:25.158+05:30  INFO 32940 --- [stock-management-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T23:48:25.174+05:30  INFO 32940 --- [stock-management-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
