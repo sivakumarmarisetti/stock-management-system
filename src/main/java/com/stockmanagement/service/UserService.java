@@ -2,6 +2,7 @@ package com.stockmanagement.service;
 
 import com.stockmanagement.dto.UserRegistrationRequestDto;
 import com.stockmanagement.dto.UserResponseDto;
+import com.stockmanagement.entity.RoleType;
 import com.stockmanagement.entity.Tenant;
 import com.stockmanagement.entity.User;
 import com.stockmanagement.exception.DuplicateResourceException;
@@ -24,6 +25,11 @@ public class UserService {
     private final TenantRepository tenantRepository;
 
     public UserResponseDto registerUser(UserRegistrationRequestDto requestDto){
+        // Prevent self-escalation — no one can register a SUPER_ADMIN via this endpoint
+        // SUPER_ADMIN must be seeded directly in DB
+        if (requestDto.getRole() == RoleType.SUPER_ADMIN) {
+            throw new RuntimeException("Cannot register SUPER_ADMIN via this endpoint");
+        }
         Tenant tenant = tenantRepository.findById(
                 requestDto.getTenantId()
         ).orElseThrow(() ->

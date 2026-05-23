@@ -43,7 +43,7 @@ public class AuthService {
         }
 
         String token =
-                jwtUtil.generateToken(user.getUsername(),user.getTenant().getId());
+                jwtUtil.generateToken(user.getUsername(),user.getTenant().getId(),user.getRole().name());
 
         loginTrackingService.trackLogin(
                 user.getUsername(),

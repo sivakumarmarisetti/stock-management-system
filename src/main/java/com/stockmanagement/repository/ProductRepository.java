@@ -34,4 +34,11 @@ public interface ProductRepository extends JpaRepository<Product, Long>,
             Long tenantId,
             Pageable pageable
     );
+
+    // Count only non-deleted products
+    long countByDeletedFalse();
+
+    // Count products with quantity below threshold
+    // CORRECT — field is 'deleted' not 'isDeleted'
+    long countByQuantityLessThanAndDeletedFalse(int quantity);
 }

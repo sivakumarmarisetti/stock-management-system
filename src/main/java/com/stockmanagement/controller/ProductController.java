@@ -96,6 +96,7 @@ public class ProductController {
     }
 
     @GetMapping("/filter")
+    @PreAuthorize("isAuthenticated()")
     public ApiResponse<PaginatedResponseDto<ProductResponseDto>> filterProducts(@RequestParam(required = false) String productName, @RequestParam(required = false) String productType, @RequestParam(required = false) BigDecimal minRate,
 
                                                                                 @RequestParam(required = false) BigDecimal maxRate,

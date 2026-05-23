@@ -6,6 +6,8 @@ import com.stockmanagement.security.LoggingFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -85,5 +87,14 @@ public class SecurityConfig {
             throws Exception {
 
         return config.getAuthenticationManager();
+    }
+
+    @Bean
+    public RoleHierarchy roleHierarchy() {
+        RoleHierarchyImpl hierarchy = new RoleHierarchyImpl();
+        hierarchy.setHierarchy(
+                "ROLE_SUPER_ADMIN > ROLE_ADMIN > ROLE_MANAGER > ROLE_INVENTORY_OPERATOR > ROLE_VIEWER"
+        );
+        return hierarchy;
     }
 }
