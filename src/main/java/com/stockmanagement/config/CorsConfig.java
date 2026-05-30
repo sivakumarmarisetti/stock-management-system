@@ -18,7 +18,11 @@ public class CorsConfig {
                 new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:4200")
+                List.of("http://localhost:4200",
+                        "https://d223juhqt63axh.cloudfront.net",
+                        "https://stockmgmt.in",
+                        "https://www.stockmgmt.in"
+                        )
         );
 
         configuration.setAllowedMethods(

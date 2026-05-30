@@ -47,7 +47,7 @@ public class StockController {
                 .build();
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN', 'MANAGER')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'MANAGER','INVENTORY_OPERATOR')")
     @GetMapping("/history/{productId}")
     public ApiResponse<List<StockHistoryResponseDto>> getStockHistory(
             @PathVariable Long productId) {
